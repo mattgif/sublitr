@@ -5,6 +5,7 @@ html {
     font-family: sans-serif;
     color: #333;
     line-height: 1.5;
+    height: 100%
 }
 
 main > * {
@@ -14,6 +15,8 @@ main > * {
 
 body {
     margin: 0;
+    padding-bottom: 45px;
+    position: relative;
 }
 
 nav, footer {
@@ -24,14 +27,20 @@ nav, footer {
 
 footer {
     position: absolute;
+    bottom: 0;
     height: 40px;
+}
+
+.filter {
+    display: block;
+    margin-bottom: 15px;
 }
 
 .tab__nav {
     padding: 0;
 }
 
-.tab__row {
+.tab__row, .table {
     list-style: none;
     text-align: left;
     padding-left: 0;
@@ -55,6 +64,71 @@ footer {
     border-bottom: none;
 }
 
-button.upload {
-    margin-bottom: 20px;
+.tile {
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.submission {
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.submission.expanded {
+    align-items: flex-start;
+}
+
+.submission p {
+    margin: 0 20px;
+}
+
+.publication {
+    font-style: italic;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.declined {
+    background-color: firebrick;
+}
+
+.accepted {
+    background-color: green;
+}
+
+.pending {
+    background-color: dimgray;
+}
+
+.revise {
+    background-color: moccasin;
+}
+
+.status {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.status label {
+    display: block;
+}
+
+.mark {
+    margin-left: auto;
 }

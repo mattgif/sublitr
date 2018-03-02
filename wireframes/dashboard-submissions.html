@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" href="dashboard.css">
-    <title>Dashboard | Submissions</title>
+    <title>Submissions</title>
 </head>
 <body>
     <nav role="navigation">Navbar</nav>
@@ -17,47 +17,80 @@
         <nav class="tab__nav">
             <ul class="tab__row">
                 <li class="tab active">Submissions</li>
-                <li class="tab">Journals</li>
-                <li class="tab">Uploads</li>
+                <li class="tab">Review</li>
+                <li class="tab">Users</li>
             </ul>
         </nav>
-        
-        <section>            
+
+        <section>
             <h2>My submissions</h2>
             <select name="submissionFilter" id="submissionFilter">
                 <option value="all">All submissions</option>
-                <option value="pending">Under review</option>
+                <option value="pending">Pending review</option>
+                <option value="revise">Revise &amp; Resubmit</option>
                 <option value="accepted">Accepted</option>
                 <option value="declined">Declined</option>
             </select>
             <div>
-                <table>
-                    <tr>
-                        <th>Status</th>
-                        <th>Publication</th>
-                        <th>Title</th>
-                    </tr>
-                    <tr>
-                        <td>Under review</td>
-                        <td>Awesome Journal</td>
-                        <td>Awesome title</td>
-                    </tr>
-                    <tr>
-                        <td>Declined</td>
-                        <td>Lorem magazine</td>
-                        <td>The ipsum dolars</td>
-                    </tr>
-                    <tr>
-                        <td>Declined</td>
-                        <td>Journal of Consectetur Adipiscing</td>
-                        <td>Reprehenderit in volupate</td>
-                    </tr>
-                    <tr>
-                        <td>Accepted</td>
-                        <td>Nostrum Exercitationem</td>
-                        <td>Esse Quam Nihil</td>
-                    </tr>
-                </table>
+                <ul class="table">
+                    <li>
+                        <div class="submission tile">
+                            <div class="circle declined"></div>
+                            <div>
+                                <div class="publication">
+                                    <p>Lorem ipsum magazine</p>
+                                </div>
+                                <div class="title">
+                                    <p>This is an article title</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="submission tile expanded">
+                            <div class="circle pending"></div>
+                            <div>
+                                <div class="publication">
+                                    <p>Awesome Journal</p>
+                                </div>
+                                <div class="title">
+                                    <p>Awesome title</p>
+                                </div>
+                                <ul>
+                                    <li>Status: Pending review</li>
+                                    <li>Submitted: <time datetime="2017-11-15">2017-11-15</time></li>
+                                    <li>Last action: <time datetime="2017-11-15">2017-11-15</time></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="submission tile">
+                            <div class="circle accepted"></div>
+                            <div>
+                                <div class="publication">
+                                    <p>Journal of Dolar Amit</p>
+                                </div>
+                                <div class="title">
+                                    <p>It's another wonderful title</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="submission tile">
+                            <div class="circle revise"></div>
+                            <div>
+                                <div class="publication">
+                                    <p>Journal of Dolar Amit</p>
+                                </div>
+                                <div class="title">
+                                    <p>Here's a title, man</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 

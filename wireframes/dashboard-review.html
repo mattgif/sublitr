@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Review</title>
+</head>
+<body>
+<nav role="navigation">Navbar</nav>
+<main role="main">
+    <header>
+        <h1>Username</h1>
+    </header>
+
+    <nav class="tab__nav">
+        <ul class="tab__row">
+            <li class="tab">Submissions</li>
+            <li class="tab active">Review</li>
+            <li class="tab">Users</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Review submissions</h2>
+        <label for="submissionFilter">Decision</label>
+        <select class="filter" name="submissionFilter" id="submissionFilter">
+            <option value="all" selected>All submissions</option>
+            <option value="pending">No decision</option>
+            <option value="revise">Revise &amp; Resubmit</option>
+            <option value="accepted">Accepted</option>
+            <option value="declined">Declined</option>
+        </select>
+
+        <label for="internalStatus">Review status</label>
+        <select class="filter" name="internalStatus" id="internalStatus" multiple>
+            <option value="all" selected>All</option>
+            <option value="none">Not reviewed</option>
+            <option value="underReview">Under review</option>
+            <option value="likelyAccept">Recommend Accept</option>
+            <option value="likelyRevise">Recommend R&amp;R</option>
+            <option value="maybe">Maybe</option>
+            <option value="likelyDecline">Recommend Decline</option>
+        </select>
+
+        <label for="publicationFilter">Publication</label>
+        <select class="filter" name="publcationFilter" id="publicationFilter">
+            <option selected>All publications</option>
+            <option>Lorem ipsum magazine</option>
+            <option>Awesome journal</option>
+            <option>Journal of Dolar Amit</option>
+        </select>
+        <div>
+            <ul class="table">
+                <li>
+                    <div class="submission tile expanded">
+                        <div class="circle pending"></div>
+                        <div>
+                            <div class="publication">
+                                <p>lorem ipsum magazine</p>
+                            </div>
+                            <div class="title">
+                                <p>This is an article title</p>
+                            </div>
+                            <div class="author">
+                                <p>Jane Doe</p>
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <input type="checkbox">
+                        </div>
+                        <div class="status">
+                            <label>Decision
+                                <select>
+                                    <option value="pending" selected>ND</option>
+                                    <option value="revise">R&amp;R</option>
+                                    <option value="accepted">A</option>
+                                    <option value="declined">D</option>
+                                </select>
+                            </label>
+                            <label>Recommendation
+                                <select>
+                                    <option value="none" selected>NR</option>
+                                    <option value="underReview">UR</option>
+                                    <option value="likelyAccept">A</option>
+                                    <option value="likelyRevise">R&amp;R</option>
+                                    <option value="maybe">M</option>
+                                    <option value="likelyDecline">D</option>
+                                </select>
+                                <ul>
+                                    <li>Submitted: <time datetime="2017-11-15">2017-11-15</time></li>
+                                    <li>Last action: <time datetime="2017-11-15">2017-11-15</time></li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="submission tile">
+                        <div class="circle pending"></div>
+                        <div>
+                            <div class="publication">
+                                <p>Awesome Journal</p>
+                            </div>
+                            <div class="title">
+                                <p>Awesome title</p>
+                            </div>
+                            <div class="author">
+                                <p>Guy Enywan</p>
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="submission tile">
+                        <div class="circle accepted"></div>
+                        <div>
+                            <div class="publication">
+                                <p>Journal of Dolar Amit</p>
+                            </div>
+                            <div class="title">
+                                <p>It's another wonderful title</p>
+                            </div>
+                            <div class="author">
+                                <p>Arthur Author</p>
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="submission tile">
+                        <div class="circle revise"></div>
+                        <div>
+                            <div class="publication">
+                                <p>Journal of Dolar Amit</p>
+                            </div>
+                            <div class="title">
+                                <p>Here's a title, man</p>
+                            </div>
+                            <div class="Author">
+                                <p>Gal Person</p>
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+<footer role="content-info">Footer</footer>
+</body>
+</html>
