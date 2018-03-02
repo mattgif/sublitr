@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     font-family: sans-serif;
     color: #333;
@@ -14,16 +15,18 @@ main * {
 
 body {
     margin: 0;
+    padding-bottom: 40px;
 }
 
 nav, footer {
     background-color: #aaa;
     text-align: center;
+    width: 100%;
 }
 
 footer {
     position: absolute;
-    bottom: 0;
+    height: 40px;
 }
 
 header, section:nth-child(odd) {
