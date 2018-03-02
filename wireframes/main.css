@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+main * {
+    padding: 10px 15px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+nav, footer {
+    background-color: #aaa;
+}
+
+header, section:nth-child(odd) {
+    background-color: #eee;
+}
+
+section:nth-child(even) {
+    background-color: #ccc;
+}
+
+form * {
+    display: block;
+}
+
+label {
+    padding-left: 0;
+}
+
+input {
+    width: 90%;
+}
+
+button {
+    margin: 15px auto;
+
+}
