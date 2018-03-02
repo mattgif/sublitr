@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard | Submissions</title>
+</head>
+<body>
+    <nav role="navigation">Navbar</nav>
+    <main role="main">
+        <header>
+            <h1>Username</h1>
+        </header>
+
+        <nav class="tab__nav">
+            <ul class="tab__row">
+                <li class="tab active">Submissions</li>
+                <li class="tab">Journals</li>
+                <li class="tab">Uploads</li>
+            </ul>
+        </nav>
+        
+        <section>            
+            <h2>My submissions</h2>
+            <select name="submissionFilter" id="submissionFilter">
+                <option value="all">All submissions</option>
+                <option value="pending">Under review</option>
+                <option value="accepted">Accepted</option>
+                <option value="declined">Declined</option>
+            </select>
+            <div>
+                <table>
+                    <tr>
+                        <th>Status</th>
+                        <th>Publication</th>
+                        <th>Title</th>
+                    </tr>
+                    <tr>
+                        <td>Under review</td>
+                        <td>Awesome Journal</td>
+                        <td>Awesome title</td>
+                    </tr>
+                    <tr>
+                        <td>Declined</td>
+                        <td>Lorem magazine</td>
+                        <td>The ipsum dolars</td>
+                    </tr>
+                    <tr>
+                        <td>Declined</td>
+                        <td>Journal of Consectetur Adipiscing</td>
+                        <td>Reprehenderit in volupate</td>
+                    </tr>
+                    <tr>
+                        <td>Accepted</td>
+                        <td>Nostrum Exercitationem</td>
+                        <td>Esse Quam Nihil</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+    </main>
+    <footer role="content-info">Footer</footer>
+</body>
+</html>

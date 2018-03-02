@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+main > * {
+    padding: 10px 15px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+nav, footer {
+    background-color: #aaa;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.tab__nav {
+    padding: 0;
+}
+
+.tab__row {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.tab {
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 115px;
+}
+
+.tab:hover {
+    background-color: #666;
+}
+
+.tab.active {
+    background-color: #eee;
+    border-bottom: none;
+}
+
+button.upload {
+    margin-bottom: 20px;
+}
