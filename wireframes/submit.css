@@ -54,3 +54,8 @@ input {
 button {
     margin: 15px auto;
 }
+
+#coverletter {
+    width: 100%;
+    height: 300px;
+}
