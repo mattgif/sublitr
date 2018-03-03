@@ -17,6 +17,7 @@ body {
     margin: 0;
     padding-bottom: 45px;
     position: relative;
+    height: 100%;
 }
 
 nav, footer {
@@ -131,4 +132,16 @@ footer {
 
 .mark {
     margin-left: auto;
+}
+
+.userlist {
+    text-align: left;
+}
+
+.userlist td, .userlist th {
+    padding: 3px;
+}
+
+.userdata *:last-child {
+    text-align: center;
 }

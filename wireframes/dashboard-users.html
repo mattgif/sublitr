@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Users</title>
+</head>
+<body>
+<nav role="navigation">Navbar</nav>
+<main role="main">
+    <header>
+        <h1>Username</h1>
+    </header>
+
+    <nav class="tab__nav">
+        <ul class="tab__row">
+            <li class="tab">Submissions</li>
+            <li class="tab">Review</li>
+            <li class="tab active">Users</li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Review submissions</h2>
+        <label for="userFilter">User roles</label>
+        <select class="filter" name="userFilter" id="userFilter">
+            <option value="all" selected>All users</option>
+            <option value="editors">Editors</option>
+            <option value="regular">Non-editors</option>
+        </select>
+        <div>
+            <table class="userlist">
+                <tr>
+                    <th>Last</th>
+                    <th>First</th>
+                    <th>Username</th>
+                    <th>Editor</th>
+                </tr>
+                <tr class="userdata">
+                    <td>Doe</td>
+                    <td>Jane</td>
+                    <td>jdoe</td>
+                    <td><input type="checkbox" checked /></td>
+                </tr>
+                <tr class="userdata">
+                    <td>Userman</td>
+                    <td>Scott</td>
+                    <td>plainusername</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                <tr class="userdata">
+                    <td>Gifford</td>
+                    <td>Matt</td>
+                    <td>mattgif</td>
+                    <td><input type="checkbox" checked /></td>
+                </tr>
+                <tr class="userdata">
+                    <td>Blahbert</td>
+                    <td>Bloof</td>
+                    <td>bbb</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+</main>
+<footer role="content-info">Footer</footer>
+</body>
+</html>
