@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" href="document-review.css">
+    <title>Document Title</title>
+</head>
+<body>
+<nav role="navigation">
+    <div class="sidebar__toggle">
+        <input id='showMenu' type="checkbox" checked />
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <p>Navbar</p>
+</nav>
+<main role="main">
+    <header>
+        <h1>Document title</h1>
+        <h2>Author name</h2>
+    </header>
+    <section class="docpreview">
+        <h2>[Placeholder for pdf/doc preview pane]</h2>
+    </section>
+</main>
+<section class="sidebar">
+    <header>
+        <h2>Document title</h2>
+        <h3>Author name</h3>
+    </header>
+    <section>
+        <p><strong>[Status icon]</strong></p>
+        <h2>Status</h2>
+        <label>Decision
+            <select>
+                <option value="pending" selected>No decision</option>
+                <option value="revise">Revise &amp; Resubmit</option>
+                <option value="accepted">Accepted</option>
+                <option value="declined">Declined</option>
+            </select>
+        </label>
+        <label>Recommendation
+            <select>
+                <option value="none" selected>No recommendation</option>
+                <option value="underReview">Under review</option>
+                <option value="likelyAccept">Recommend Accept</option>
+                <option value="likelyRevise">Recommend R&amp;R</option>
+                <option value="maybe">Maybe</option>
+                <option value="likelyDecline">Recommend Decline</option>
+            </select>
+            <ul>
+                <li>Submitted: <time datetime="2017-11-15">2017-11-15</time></li>
+                <li>Last action: <time datetime="2017-11-15">2017-11-15</time></li>
+            </ul>
+        </label>
+    </section>
+
+    <section class="comments">
+        <p><strong>[Comments icon][comment count]</strong></p>
+        <h2>Comments</h2>
+        <form class="comments__add">
+            <h4>Comment:</h4>
+            <textarea name="newComment" id="newComment"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="comments__list">
+            <ul>
+                <li class="comments__card">
+                    <div class="user__icon"></div>
+                    <div class="comments__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorem doloremque
+                            doloribus eius eos error fugit id, inventore minus nam nobis porro possimus repellat
+                            repellendus repudiandae rerum suscipit velit veritatis?</p>
+                    </div>
+                    <div class="comments__footer">
+                        <div class="comments__name">
+                            <p>Zax Lorax</p>
+                        </div>
+                        <div class="comments__date">
+                            <time datetime="2018-03-04 21:12">Mar 4 9p</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="comments__card">
+                    <div class="user__icon"></div>
+                    <div class="comments__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorem doloremque
+                            doloribus eius eos error fugit id, inventore minus nam nobis porro possimus repellat
+                            repellendus repudiandae rerum suscipit velit veritatis?</p>
+                    </div>
+                    <div class="comments__footer">
+                        <div class="comments__name">
+                            <p>Horton Who</p>
+                        </div>
+                        <div class="comments__date">
+                            <time datetime="2018-03-03 08:30">Mar 3 8:30a</time>
+                        </div>
+                    </div>
+                </li>
+                <li class="comments__card">
+                    <div class="user__icon"></div>
+                    <div class="comments__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorem doloremque
+                            doloribus eius eos error fugit id, inventore minus nam nobis porro possimus repellat
+                            repellendus repudiandae rerum suscipit velit veritatis?</p>
+                    </div>
+                    <div class="comments__footer">
+                        <div class="comments__name">
+                            <p>Cindy Lou</p>
+                        </div>
+                        <div class="comments__date">
+                            <time datetime="2018-03-03 08:00">Mar 3 8a</time>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</section>
+<footer role="content-info">Footer</footer>
+</body>
+</html>
