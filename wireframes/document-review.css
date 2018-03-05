@@ -211,3 +211,6 @@ footer {
     display: block;
 }
 
+.status label {
+    display: block;
+}
