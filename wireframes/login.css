@@ -17,6 +17,21 @@ html {
     padding: 75px 15px;
 }
 
+.modal__login {
+    position: relative;
+}
+
+.modal__close {
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    background: none;
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    border: none;
+}
+
 @media screen and (min-width:600px) {
     .modal__overlay {
         position: fixed;
@@ -46,10 +61,12 @@ html {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .modal__close {
+        top: 5px;
+        right: 5px;
+    }
 }
-
-
-
 
 .modal__login label, .modal__login input {
     display: block;
@@ -66,7 +83,7 @@ html {
     margin: 0;
 }
 
-.modal__login button {
+.modal__login button[type="submit"] {
     height: 40px;
     width: 100px;
     border: 1px solid #ddd;
