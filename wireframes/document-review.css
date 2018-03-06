@@ -214,3 +214,18 @@ footer {
 .status label {
     display: block;
 }
+
+.comments__footer * {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.comments__footer {
+    position: relative;
+}
+
+.comments__date {
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+}

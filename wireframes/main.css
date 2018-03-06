@@ -39,6 +39,10 @@ section:nth-child(even) {
     background-color: #ccc;
 }
 
+ul {
+    margin-left: 35px;
+}
+
 form * {
     display: block;
 }
