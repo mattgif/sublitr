@@ -22,9 +22,14 @@ sublitr is a react/node based submission manager. Users submit to a publication 
 | ------------- | ------------- |
 | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/admin-publications.png" alt="sublitr publication manager" width="200"></kbd> | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/admin_users.png" alt="sublitr user manager" width="200"></kbd> |
 
+## Client
+### Repo link: https://github.com/mattgif/sublitr-client
+
+sublitr's client is built with React Redux. 
+
 ## API
 ### Repo link: https://github.com/mattgif/sublitr-api
-sublitr's API is secured using JSON web tokens (JWT) with Passport.js.
+sublitr's API is secured using JSON web tokens (JWT) with Passport.js, and are fully tested with Mocha/Chai.
 
 ### Auth endpoints
 
@@ -152,9 +157,22 @@ sublitr's API is secured using JSON web tokens (JWT) with Passport.js.
   
 #### DELETE 'api/users/:id'
   Delets user with specified id. Requires admin.
-  
-## Client
-### Repo link:https://github.com/mattgif/sublitr-client
 
 ## Technology
+
+### Back-end:
+* [Node.js](https://nodejs.org/en/)
+* [express](https://expressjs.com/)
+* [AWS S3 sdk](https://aws.amazon.com/sdk-for-node-js/) 
+* MongoDB / mongoose 
+* [Passport](http://www.passportjs.org/)
+* [express-fileupload](https://www.npmjs.com/package/express-fileupload)
+* [Mocha](https://mochajs.org/)
+
+### Front-end:
+* Javascript/html/css
+* [React](https://reactjs.org/)
+* [Redux](https://github.com/reactjs/react-redux)
+* [Enzyme](https://github.com/airbnb/enzyme)
+* [semanti-ui-react](https://react.semantic-ui.com/)
 
