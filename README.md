@@ -5,8 +5,8 @@ sublitr is a react/node based submission manager. Users submit to a publication 
 
 #### Table of Contents
 * [Screenshots](#screenshots)
-* [API](#API)
-* [Client](#Client)
+* [API](#api)
+* [Client](#client)
 * [Technology used](#technology)
 
 ## Screenshots
