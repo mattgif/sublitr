@@ -15,9 +15,11 @@ sublitr is a react/node based submission manager. Users submit to a publication 
 | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/landing.png" alt="sublitr landing page" width="200"> | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/editor_docviewer.png" alt="sublitr document viewer" width="200">  |
 
 | Editor panel | User submission tracker |
+| ------------- | ------------- |
 | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/editor_review_pane.png" alt="sublitr reviewer panel" width="200"> | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/user_submissions.png" alt="sublitr user's submission manager" width="200"> |
 
 | Publication manger | User manager |
+| ------------- | ------------- |
 | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/admin-publications.png" alt="sublitr publication manager" width="200"></kbd> | <img src="https://raw.githubusercontent.com/mattgif/sublitr/master/assets/admin_users.png" alt="sublitr user manager" width="200"></kbd> |
 
 ## API
